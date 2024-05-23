@@ -1,18 +1,8 @@
-## Getting Started
+Serialização das Classes de Modelo 
+Todas as classes de modelo (ObraDeArte, Pintura, Escultura) implementam a interface Serializable. Isso permite que os objetos dessas classes sejam convertidos em bytes e salvos em arquivos, possibilitando a persistência dos dados.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Métodos para Salvar e Carregar Dados no Museu: 
+A classe Museu foi atualizada com métodos para salvar e carregar dados usando ObjectOutputStream e ObjectInputStream. Esses métodos permitem que os objetos de obras de arte sejam gravados e lidos de um arquivo.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Integração com o Sistema
+No início do programa, os dados são carregados do arquivo. Ao sair do sistema, os dados são salvos automaticamente.
